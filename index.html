@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Twitter</title>   
+<script src=“/script.js”></script>
+
+<style>
+form{
+    margin: 15%;
+   
+}
+body{
+    background-color: pink;
+}
+.button{
+    border-radius: 5px;
+    border: 2px solid;
+    background-color: pink;
+    color: blueviolet;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+#button{
+    padding-top: 20px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+fieldset{
+    background-color: white;
+}
+h1{
+    text-align: center;
+   color: blueviolet;
+}
+textarea{
+    border: solid palevioletred 5px;
+}
+
+</style>
+
+</head>
+<body>
+<h1>Twitter</h1>
+<form>
+ <fieldset>
+  <fieldset> 
+  
+    <label id="user"></label> <br>
+
+    <label> Write The Tweet </label><br>
+   
+    <textarea id="textarea" cols="50" rows="3"></textarea>
+   <div>
+    <button class="button" onclick="getValue()" type="button">send</button>
+    <a href="/tweetfeed.html" type="button" name="button" value="tweet" onclick="getValue()" class="button" id="#button">Tweet</a>
+
+  </div>
+   </fieldset>
+   <fieldset>
+    <div id="tweet_Area">
+    </div>
+    <script>
+
+    var userName;
+    userName =document.getElementById("user").textContent;
+    var tweetTex ;
+    tweetTex = document.getElementById("textarea").textContent;
+    var button=document.getElementById("button");
+    var twitter_Array=[];
+    tweet={
+        name:userName.text,
+        Text:tweetTex.text
+    }
+    var tweet_Area=document.getElementById("tweet_Area");
+
+    button.onclick=function (e){
+  e = twitter_Array.push([tweet.name,"<br>",tweet.Text]);
+  tweet_Area.innerHTML = userName+"<br>"+tweetTex;  
+}
+
+function getValue() {
+var text = document.getElementById("textarea").value;
+tweet_Area.innerHTML = text;
+}
+
+   
+   </script>
+
+  </fieldset>
+ </fieldset>
+</form>
+
+</body>
+
+</html>

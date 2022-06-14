@@ -1,0 +1,237 @@
+<html>
+
+<head>
+    <script src="script.js"></script>
+
+    <title>Twitter</title>
+    <style>
+        #divv {
+            display: flex;
+
+        }
+
+        .search-img {
+            float: left;
+            padding: 10px
+        }
+
+        div {
+            background-color: paleturquoise;
+            margin-bottom: 10px;
+            padding-right: 50px;
+            border-radius: 30px;
+            padding: 2em;
+        }
+
+        #search {
+            margin-bottom: 10px;
+            padding: 4px;
+            padding-right: 5em;
+        }
+
+        .acount-name {
+            padding-right: 10px;
+        }
+
+        .left-div {
+            display: flex;
+        }
+
+        .follow-button {
+            background-color: palevioletred;
+            color: white;
+            width: 8em;
+            border-radius: 10px;
+             border-radius: 5px;
+            border: 2px solid;
+            background-color: pink;
+            color: blueviolet;
+            text-align: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .tweet-button1 {
+            padding: 10px 50px 10px 50px;
+            border-radius: 20px;
+             border-radius: 5px;
+            border: 2px solid;
+            background-color: pink;
+            color: blueviolet;
+            text-align: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        #logo a {
+            margin-left: 60px;
+            padding: 10px;
+        }
+
+        .nav {
+            margin-bottom: -10px;
+            margin-top: -10;
+        }
+
+        #home {
+            position: 5px;
+        }
+
+        tweet-button {
+            float: right bottom;
+             border-radius: 5px;
+            border: 2px solid;
+            background-color: pink;
+            color: blueviolet;
+            text-align: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        #centerdiv {
+            width: 50%;
+            margin-left: 1%;
+            margin-right: 1%;
+            border-right: 1px solid;
+            
+        }
+
+        #rightdiv {
+            width: 25%;
+        }
+
+        #tweetUserInfo {
+            display: flex;
+
+        }
+
+        #userName {
+            margin: 3px;
+        }
+
+        .tweet {
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+              border: 2px solid;
+            background-color: pink;
+            color: blueviolet;
+            text-align: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        #userImg {
+            border: 1px solid palevioletred;
+            border-radius: 30px;
+        }
+
+        #user {
+            border: 1px solid;
+            display: flex;
+            border-radius: 5px;
+        }
+
+        fieldset {
+            border-radius: 5px;
+        }
+
+        #user {
+            display: flex;
+        }
+        .search1{
+            padding: 5px;
+            margin: 5px;
+        }
+        textarea{
+            margin-top: 20px;
+            width: 60%;
+            height: 60%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <section class="divs" id="divv">
+        <div class="divs" id="left-div">
+            <div class="right-div" id="search">
+                <img class="search-img" src="images/loupe.png" alt="search" height="20px" width="20px">
+                <input class="search1" placeholder="Search Twitter"> </input>
+            </div>
+
+            <div class="right-div">
+                <h3>Trends</h3>
+                <pre>#1 Trends            2K Tweets </pre>
+                <pre>
+
+
+            </div>
+
+            <div class="right-div">
+
+                <h2>follow</h2>
+                <div class="left-div">
+                    <img src="images/WordPress-developer.png" alt="account photo" height="50px" width="50px">
+                    <p class="acount-name" >shatha</p>
+                    <button class="follow-button">follow</button>
+                </div>
+
+             
+
+            </div>
+        </div>
+    
+        <div class="divs" id="centerdiv">
+            <h3 id="home">Home</h3>
+            <a href="/index.html" id="user">
+                <div id="userInt">
+                    <img id="user" src="images/WordPress-developer.png" alt="user photo" height="50" width="50">
+                    <p>Shatha</p>
+                </div> 
+                <form>
+                   <textarea id="tweetText" cols="30" rows="2" placeholder="What's happening" width="70px" height="70px"></textarea>
+
+                <input type="button" name="button" value="Tweet" class="tweet-button" id="tweet-button" /></form> 
+            </a>
+            <form>
+
+           
+
+            </form>
+            <hr>
+            <br>
+            <script>
+                var tweet = {
+                    a: document.getElementById("userInt"),
+                    b: document.getElementById("tweetText")
+                };
+
+                var tweetDiv = document.createElement("div");
+
+                var tweetArray = [];
+
+                const btn = document.getElementById("tweet-button");
+
+                btn.addEventListener("click", function (e) {
+                    tweetArray.push = tweet;
+
+                    e = tweetDiv.innerHTML = tweetArray.values;
+                    return e;
+                });
+                document.getElementById(tweetText)[0]
+                    .addEventListener('click', function (event) {
+                        tweetArray.push = tweet;
+                        tweetDiv.innerHTML = tweetArray.values;
+                        
+                    });
+            </script>
+        </div>
+        <div class="divs" id="rightdiv">  
+        </div>
+    </dev>
+
+</body>
+
+</html>

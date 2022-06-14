@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Twitter</title>
+
+    <style>
+        form {
+            margin: 10% 30%;
+        }
+
+        fieldset {
+            border-radius: 5px;
+            background-color: pink;
+        }
+
+        .buttonn {
+            
+            border-radius: 20px;
+            background-color: palevioletred;
+            float: right;
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px 30px 15px 30px;
+        }
+        #username{
+            font-size: large;
+
+        }
+        .user_img{
+           height:"20px";
+            width:"20px" ;
+        }
+      
+    </style>
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <form action="twetter.html" method="get">
+        <fieldset>
+                <h1>Tweet Now</h1>
+            <label>
+                <span id="tweetUserInfo">
+                    <img  src="./images/WordPress-developer.png" alt="user photo" height="100px" width="100px"> <h2 id="userName">Shatha</h2>
+                    
+                </span>
+            </label>
+            <br>
+            <textarea id="tweetText" cols="50" rows="5"></textarea>
+            <input type="button" name="button" value="Tweet" class="buttonn">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
